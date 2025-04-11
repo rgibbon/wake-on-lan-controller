@@ -1,0 +1,11 @@
+services:
+  wol_server:
+    build: .
+    container_name: wol_server
+    network_mode: host
+    restart: unless-stopped
+    environment:
+      - PORT=3333
+    volumes:
+      - .:/server
+      -  /server/node_modules

@@ -1,0 +1,23 @@
+---
+title: WOL Controller
+polling_rate: 5000
+servers:
+  - name: helios
+    ip: 10.0.0.2
+    mac: 00:00:00:00:00:00
+    broadcast: 10.0.0.255
+
+  - name: hydra
+    ip: 10.0.0.3
+    mac: 00:00:00:00:00:00
+    broadcast: 10.0.0.255
+
+  - name: apollo
+    ip: 10.0.0.4
+    mac: 00:00:00:00:00:00
+    broadcast: 10.0.0.255
+
+  - name: poseidon
+    ip: 10.0.0.5
+    mac: 00:00:00:00:00:00
+    broadcast: 10.0.0.255

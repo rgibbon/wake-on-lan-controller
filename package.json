@@ -1,0 +1,28 @@
+{
+  "name": "wol-server",
+  "version": "1.0.0",
+  "description": "Gibbon WOL server",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+
+    "install": "cd client && npm i",
+    "dev": "concurrently \"cd client && npm i && npm run dev\" \"nodemon server\"",
+    "build": "cd client && npm run build",
+    "start": "node server.js"
+  },
+  "author": "Ryan Gibbon",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.21.2",
+    "ping": "^0.4.4",
+    "socket.io": "^4.8.1",
+    "uid": "^2.0.2",
+    "wake_on_lan": "^1.0.0",
+    "yaml": "^2.7.0"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2",
+    "nodemon": "^3.1.9"
+  }
+}
